@@ -1,0 +1,3 @@
+tellraw @a ["",{"text":"[ ","color":"white","bold":true},{"text":"BrainFuck ","color":"red","bold":true},{"text":"Compoiler ","color":"yellow","bold":true},{"text":"Dashboard ","color":"blue","bold":true},{"text":"] ","color":"white","bold":true},{"text":"by langyo","color":"gold","italic":true,"clickEvent":{"action":"open_url","value":"https://github.com/langyo"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Click here to visit my Github homepage!","color":"dark_purple"}]}},"bold":false}]
+execute as @a[scores={dashboardType=1..8}] run function langyo:brainfuck/dashboard/input/commandInput
+execute as @a[scores={dashboardType=9..16}] run function langyo:brainfuck/dashboard/input/dataInput
